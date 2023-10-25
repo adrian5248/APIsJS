@@ -6,8 +6,8 @@ let dirY = 1;
 
 let idx = 10;
 let idy  = 10;
-let ini =0;
 
+let ini =0;
 
 function hslColor(h){
     return `hsl(${ h },100%,50%)`

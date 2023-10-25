@@ -12,15 +12,20 @@ ctx.arc(200 , 200, 100, 0, Math.PI * 2, true);
 ctx.fill();
 ctx.beginPath()
 // esto es para hacer los ojos
+// ojo derecho
 ctx.fillStyle = 'red';
-ctx.moveTo(130, 190);
-ctx.lineTo(120, 95);
-ctx.lineTo(140, 86);
+ctx.beginPath();
+ctx.moveTo(190, 190);
+ctx.lineTo(135, 190);
+ctx.lineTo(150, 152);
 ctx.fill();
-ctx.moveTo(130, 190);
-ctx.lineTo(120, 89 );
-ctx.lineTo(140, 86);
+//ojo izquierdo
+ctx.beginPath();
+ctx.moveTo(265, 190);
+ctx.lineTo(212, 190);
+ctx.lineTo(249, 150);
 ctx.fill();
+// esto es para la boca
 ctx.fillStyle = 'red';
 ctx.beginPath();
 // esto es para hacer la boca de la cara
@@ -28,13 +33,21 @@ ctx.arc(200, 225, 60, 0, Math.PI, false);
 ctx.fill();
 
 
-ctx.beginPath();
-ctx.strokeStyle = 'white';
-ctx.moveTo(144, 124);
-ctx.lineWidth = 14;
-ctx.lineCap = "round";
-ctx.lineTo(183, 145);
-ctx.stroke();
 
+// luna
+ctx.beginPath();
+ctx.fillStyle = "white";
+ctx.arc(60, 62, 21, 0, Math.PI * 7, true);
+ctx.fill();
+
+// tronco
+
+ctx.beginPath();
+ctx.strokeStyle = 'black';
+ctx.moveTo(200, 110);
+ctx.lineWidth = 13;
+ctx.lineCap = "round";
+ctx.lineTo(175, 68);
+ctx.stroke();
 
 
